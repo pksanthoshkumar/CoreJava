@@ -1,9 +1,5 @@
 package org.example.java17.textblock;
 
-import org.example.java17.Book;
-import org.example.java17.Electronic;
-import org.example.java17.Product;
-
 public class TextBlockProblem {
     /*You are creating a system that needs to display information about products, such as Books and Electronics.
     Use text blocks to display product details in a structured format, and use pattern matching with instanceof to extract details about the product.

@@ -1,9 +1,4 @@
-package org.example.java17.switchcasePattern;
-
-import org.example.java17.Circle;
-import org.example.java17.Rectangle;
-import org.example.java17.Shape;
-import org.example.java17.Square;
+package org.example.java17.sealedClassSwitchCase;
 
 public class PatternMatchingProblem {
     /*
