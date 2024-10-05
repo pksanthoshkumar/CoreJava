@@ -1,4 +1,8 @@
-package org.example.java17;
+package org.example.java17.textblock;
+
+import org.example.java17.Book;
+import org.example.java17.Electronic;
+import org.example.java17.Product;
 
 public class TextBlockProblem {
     /*You are creating a system that needs to display information about products, such as Books and Electronics.

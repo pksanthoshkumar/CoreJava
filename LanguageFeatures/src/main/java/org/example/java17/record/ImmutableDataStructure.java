@@ -1,4 +1,4 @@
-package org.example.java17;
+package org.example.java17.record;
 
 public class ImmutableDataStructure {
     /*
