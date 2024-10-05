@@ -1,6 +1,6 @@
-package org.example.record;
+package org.example.java17;
 
-public class PatternMatching {
+public class PatternMatchingProblem {
     /*
     You are dealing with different shapes in a geometric system, and each shape has its own set of properties.
     Create a record for Circle and Rectangle, and use Pattern Matching for switch in Java 17 to calculate the area of each shape.
@@ -11,7 +11,7 @@ public class PatternMatching {
         Shape square = new Square(2.5);
         Shape rectangle = new Rectangle(2, 2.5);
 
-        PatternMatching pattern = new PatternMatching();
+        PatternMatchingProblem pattern = new PatternMatchingProblem();
 
         System.out.println("Circle : " + pattern.calculateArea(circle));
         System.out.println("Square : " + pattern.calculateArea(square));
