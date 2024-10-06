@@ -20,11 +20,15 @@ public class FilterMapSortExample {
                 new Person("Abhiram", 27, "Ottawa"),
                 new Person("Adithya", 20, "Calicut"),
                 new Person("Kannan", 20, "Kollam"),
-                new Person("Aayaan", 5, "Spain")
+                new Person("Gayathry", 20, "Cochin"),
+                new Person("Aayaan", 5, "Spain"),
+                new Person("Hari", 60, "Kollam")
                 );
 
         System.out.println("Natural Order " + getSortedNatural (persons));
         System.out.println("Reverse Order " + getSortedReverse (persons));
+        System.out.println("Reverse Order " + getNamesSortedByAgeThenName (persons));
+
     }
 
     static List <String> getSortedNatural(List<Person> persons) {
@@ -45,4 +49,10 @@ public class FilterMapSortExample {
         return names;
     }
 
+    public static List<String> getNamesSortedByAgeThenName(List<Person> people) {
+        return people.stream()
+                .sorted(Comparator.comparing(p-> ((Person)p).age()).thenComparing(p-> ((Person)p).name()))
+                .map(person -> person.name() + " : " + person.age())
+                .collect(Collectors.toList());
+    }
 }
