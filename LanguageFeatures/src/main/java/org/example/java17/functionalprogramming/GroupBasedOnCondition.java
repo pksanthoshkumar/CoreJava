@@ -35,8 +35,13 @@ public class GroupBasedOnCondition {
             }
         }));
 
-        System.out.println("Low paid" + empMap.getOrDefault("low", Collections.emptyList()));
-        System.out.println("Medium paid" + empMap.getOrDefault("medium", Collections.emptyList()));
-        System.out.println("High paid" + empMap.getOrDefault("high", Collections.emptyList()));
+        System.out.println("Low paid" );
+        empMap.getOrDefault("low", Collections.emptyList()).forEach(e-> System.out.println(e.name()));
+
+        System.out.println("Medium paid" );
+        empMap.getOrDefault("medium", Collections.emptyList()).forEach(e-> System.out.println(e.name()));
+
+        System.out.println("High paid" );
+        empMap.getOrDefault("high", Collections.emptyList()).forEach(e-> System.out.println(e.name()));
     }
 }
