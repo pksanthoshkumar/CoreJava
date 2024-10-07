@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class MapReduceProblem {
+public class GroupCountingProblem {
 
     /*
     Problem: You are given a list of sentences, where each sentence contains multiple words separated by spaces.
