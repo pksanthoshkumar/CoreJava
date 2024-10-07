@@ -1,12 +1,11 @@
 package org.example.java17.functionalprogramming;
 
 import java.util.Arrays;
-import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class GroupingCounting {
+public class GroupingCountingMapReduce {
     /*
     You have a list of employees, each with a name, department, and salary.
     Write a function to group employees by their department and count how many employees belong to each department.
