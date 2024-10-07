@@ -16,6 +16,10 @@ public class TextBlockProblem {
         System.out.println(getProdInfo (graphQL));
         System.out.println(getProdInfo (keyBoard));
 
+        System.out.println("*------------------*");
+        System.out.println(getProdInfoSwitch (keyBoardBook));
+        System.out.println(getProdInfoSwitch (keyBoard));
+
     }
 
     private static String getProdInfo(Product product) {
@@ -26,6 +30,25 @@ public class TextBlockProblem {
             prodInfo = "Title : %s  Author : %s  Price : %f ".formatted( book.title(), book.author(),  book.price());
         }else if (product instanceof Electronic ele) {
             prodInfo = "Product : %s Price : %f".formatted( ele.prodInfo(), ele.price());
+        }
+
+        return prodInfo;
+    }
+
+    private static String getProdInfoSwitch(Product product) {
+
+        String prodInfo = "";
+
+        switch (product){
+            case Book book -> {
+                prodInfo = """
+                        Title : %s
+                        Author : %s
+                        Price : %f
+                        """.formatted(book.title(), book.author(), book.price());
+            }
+
+            default -> throw new IllegalStateException("Unexpected value: " + product);
         }
 
         return prodInfo;
